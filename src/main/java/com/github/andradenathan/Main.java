@@ -25,13 +25,13 @@ public class Main {
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
 
-        configurateKeys(frame, doublePendulum);
+        configureKeys(frame, doublePendulum);
 
         frame.setVisible(true);
         frame.requestFocus();
     }
 
-    private static void configurateKeys(JFrame frame, DoublePendulum doublePendulum) {
+    private static void configureKeys(JFrame frame, DoublePendulum doublePendulum) {
         frame.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent event) {
