@@ -12,7 +12,7 @@ public class Trajectory {
         this.maxPoints = maxPoints;
     }
 
-    public void add(double x, double y) {
+    public void addPoint(double x, double y) {
         points.add(new Point2D.Double(x,y));
 
         if (points.size() > maxPoints) {
@@ -26,21 +26,5 @@ public class Trajectory {
 
     public void clear() {
         points.clear();
-    }
-
-    public int size() {
-        return points.size();
-    }
-
-    public boolean isEmpty() {
-        return points.isEmpty();
-    }
-
-    public Point2D.Double getLastPoint() {
-        if (points.isEmpty()) {
-            return null;
-        }
-
-        return points.get(points.size() - 1);
     }
 }
