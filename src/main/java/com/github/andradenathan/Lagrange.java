@@ -36,7 +36,7 @@ public class Lagrange {
         double denominator1 = length1 * (2 * mass1 + mass2 - mass2 * Math.cos(2 * delta));
         double denominator2 = length2 * (2 * mass1 + mass2 - mass2 * Math.cos(2 * delta));
 
-        // (θ(t)'' = d²θ/dt²)
+
         return new double[] { numerator1 / denominator1, numerator2 / denominator2 };
     }
 
