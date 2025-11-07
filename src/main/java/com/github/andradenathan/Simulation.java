@@ -24,19 +24,7 @@ public class Simulation {
     }
 
     public static Simulation faster() {
-        return new Simulation(0.1, 30, 300, 400, 200);
-    }
-
-    private void validate(double dt, int interval, int frames) {
-        if (dt <= 0) {
-            throw new IllegalArgumentException("Time step must be positive.");
-        }
-        if (interval <= 0) {
-            throw new IllegalArgumentException("Steps per frame must be positive.");
-        }
-        if (frames <= 0) {
-            throw new IllegalArgumentException("Total frames must be positive.");
-        }
+        return new Simulation(0.1, 1, 1000, 400, 200);
     }
 
     public double getTimeStep() {
