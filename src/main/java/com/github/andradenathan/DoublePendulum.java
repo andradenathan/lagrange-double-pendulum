@@ -55,7 +55,7 @@ public class DoublePendulum extends JPanel implements ActionListener {
 
     private void updateTrajectory() {
         Point2D.Double position = calculatePendulumSecondPosition();
-        trajectory.add(position.x, position.y);
+        trajectory.addPoint(position.x, position.y);
     }
 
     private Point2D.Double calculatePendulumFirstPosition() {
@@ -91,7 +91,7 @@ public class DoublePendulum extends JPanel implements ActionListener {
 
         drawTrajectory(g2d);
         drawPendulums(g2d);
-        drawInformations(g2d);
+        drawInformation(g2d);
     }
 
     private void drawTrajectory(Graphics2D g2d) {
@@ -132,7 +132,7 @@ public class DoublePendulum extends JPanel implements ActionListener {
         g2d.fillOval((int) secondPos.x - 12, (int)secondPos.y - 12, 24, 24);
     }
 
-    private void drawInformations(Graphics2D g2d) {
+    private void drawInformation(Graphics2D g2d) {
         g2d.setColor(Color.BLACK);
         g2d.setFont(new Font("Arial", Font.PLAIN, 14));
 
