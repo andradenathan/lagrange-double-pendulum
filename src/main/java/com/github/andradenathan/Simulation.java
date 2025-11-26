@@ -16,15 +16,15 @@ public class Simulation {
     }
 
     public static Simulation usingDefault() {
-        return new Simulation(0.05, 20, 500, 400, 200);
+        return new Simulation(0.05, 20, 500, 400, 350);
     }
 
     public static Simulation accurate() {
-        return new Simulation(0.01, 50, 1000, 400, 200);
+        return new Simulation(0.01, 50, 1000, 400, 350);
     }
 
     public static Simulation faster() {
-        return new Simulation(0.1, 1, 1000, 400, 200);
+        return new Simulation(0.1, 1, 1000, 400, 350);
     }
 
     public double getTimeStep() {
