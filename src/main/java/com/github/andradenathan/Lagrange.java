@@ -68,9 +68,9 @@ public class Lagrange {
         double y2 = y1 - length2 * Math.cos(theta2);
 
         double xSpeed1 = length1 * omega1 * Math.cos(theta1);
-        double ySpeed1 = length2 * omega2 * Math.cos(theta2);
+        double ySpeed1 = length1 * omega1 * Math.sin(theta1);
         double xSpeed2 = xSpeed1 + length2 * omega2 * Math.cos(theta2);
-        double ySpeed2 = ySpeed1 + length2 * omega2 * Math.cos(theta2);
+        double ySpeed2 = ySpeed1 + length2 * omega2 * Math.sin(theta2);
 
         double kineticEnergy = 0.5 * mass1 * (xSpeed1 * xSpeed1 + ySpeed1 * ySpeed1)
                 + 0.5 * mass2 * (xSpeed2 * xSpeed2 + ySpeed2 * ySpeed2);
@@ -96,9 +96,9 @@ public class Lagrange {
         double y2 = y1 - length2 * Math.cos(theta2);
 
         double xSpeed1 = length1 * omega1 * Math.cos(theta1);
-        double ySpeed1 = length2 * omega2 * Math.cos(theta2);
+        double ySpeed1 = length1 * omega1 * Math.sin(theta1);
         double xSpeed2 = xSpeed1 + length2 * omega2 * Math.cos(theta2);
-        double ySpeed2 = ySpeed1 + length2 * omega2 * Math.cos(theta2);
+        double ySpeed2 = ySpeed1 + length2 * omega2 * Math.sin(theta2);
 
         double kineticEnergy = 0.5 * mass1 * (xSpeed1 * xSpeed1 + ySpeed1 * ySpeed1)
                 + 0.5 * mass2 * (xSpeed2 * xSpeed2 + ySpeed2 * ySpeed2);
